@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-class Solution {
+class Solucao {
 public:
     void sortColors(vector<int>& nums) {
         int low = 0, mid = 0;
