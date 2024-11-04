@@ -1,3 +1,5 @@
+// Desafio 75. Sort Colors link: https://leetcode.com/problems/sort-colors/description/?envType=problem-list-v2&envId=sorting
+
 #include <vector>
 using namespace std;
 
@@ -9,15 +11,15 @@ public:
 
         while (mid <= high) {
             if (nums[mid] == 0) {
-                // Troca o 0 para a posição do 'low'
+                // troca o 0 para a posição do low
                 swap(nums[low], nums[mid]);
                 low++;
                 mid++;
             } else if (nums[mid] == 1) {
-                // Apenas avança o ponteiro 'mid'
+                // apenas avança o ponteiro mid
                 mid++;
             } else {
-                // Troca o 2 para a posição do 'high'
+                // troca o 2 para a posição do high
                 swap(nums[mid], nums[high]);
                 high--;
             }
