@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-class Solution {
+class Solucao {
 public:
     vector<int> sortArrayByParity(vector<int>& nums) {
         int left = 0, right = nums.size() - 1;
